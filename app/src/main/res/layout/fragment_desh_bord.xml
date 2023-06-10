@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.DeshBordFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_below="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:context=".DashboardActivity">
+
+                    <RelativeLayout
+                        android:id="@+id/balaceInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_84sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        >
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizonScrollmoneyInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_80sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone">
+
+                            <include layout="@layout/dashboard_balance_show_card"></include>
+
+                        </HorizontalScrollView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/shadowVisible"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_12sdp"
+                            app:cardCornerRadius="@dimen/_8sdp">
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/money_bg"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/tapforInfo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:fontFamily="@font/doppio_one"
+                                    android:gravity="center"
+                                    android:text="Tap Here to See Balance"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_16sdp" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/balaceInfo">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/tapforInfo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            app:cardCornerRadius="@dimen/_8sdp">
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:id="@+id/quickmenu"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/doppio_one"
+                                        android:text="Quick menu"
+                                        android:textAlignment="center"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="@dimen/_8sdp"
+                                        android:layout_marginBottom="@dimen/_10sdp"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:id="@+id/des_daily_task2"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/_8sdp"
+                                            android:layout_weight="1"
+                                            android:visibility="gone"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+
+                                                android:layout_gravity="center"
+                                                android:layout_marginTop="@dimen/_2sdp"
+
+                                                android:src="@drawable/daily_task" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_4sdp"
+                                                android:fontFamily="@font/doppio_one"
+                                                android:text="Daily Task"
+                                                android:textAlignment="center"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                                android:textSize="@dimen/_10sdp"
+
+                                                />
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/des_Mobile_recharge2"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/_8sdp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/_19sdp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginTop="@dimen/_2sdp"
+                                                android:src="@drawable/recharge_phone" />
+
+                                            <TextView
+                                                android:id="@+id/mobile_recharge_text"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_4sdp"
+                                                android:ellipsize="marquee"
+                                                android:focusable="true"
+                                                android:focusableInTouchMode="true"
+                                                android:fontFamily="@font/doppio_one"
+                                                android:marqueeRepeatLimit="marquee_forever"
+                                                android:scrollHorizontally="true"
+                                                android:singleLine="true"
+                                                android:text="Mobile Recharge"
+                                                android:textAlignment="center"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                                android:textSize="@dimen/_10sdp"
+
+                                                />
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/_8sdp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:layout_marginTop="@dimen/_2sdp"
+                                                android:src="@drawable/ic_notifications" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_4sdp"
+                                                android:fontFamily="@font/doppio_one"
+                                                android:text="Notification"
+                                                android:textAlignment="center"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                                android:textSize="@dimen/_10sdp"
+
+                                                />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/des_profile"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/_8sdp"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <de.hdodenhof.circleimageview.CircleImageView
+                                                android:id="@+id/des_profile_pic"
+                                                android:layout_width="@dimen/_20sdp"
+                                                android:layout_height="@dimen/_20sdp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginTop="2dp"
+                                                android:src="@drawable/ic_profile" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_4sdp"
+                                                android:fontFamily="@font/doppio_one"
+                                                android:text="Profile"
+                                                android:textAlignment="center"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                                android:textSize="@dimen/_10sdp"
+
+                                                />
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/browse_menu_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/doppio_one"
+                        android:text="Browse Menu"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+
+                <include layout="@layout/deshboard_buttom" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "450201159296",
+    "project_id": "ismt-95642",
+    "storage_bucket": "ismt-95642.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450201159296:android:8fd40754685f7ddb8b0865",
+        "android_client_info": {
+          "package_name": "com.ismt.world"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450201159296-8oppeah00hi8kp61n23gcnitucgkgb7e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ismt.world",
+            "certificate_hash": "70cd10f55d559b933a68d4e28437f79841df7834"
+          }
+        },
+        {
+          "client_id": "450201159296-uh36et2vhceulj32tplimnn2u8qhp59k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2AbUmWgDWMguGv8rcFRBqDrrN6jeZHSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450201159296-uh36et2vhceulj32tplimnn2u8qhp59k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
